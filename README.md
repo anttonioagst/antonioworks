@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio de Antonio Augusto
 
-## Getting Started
+Portfólio em português adaptado da referência visual [Samworks](https://samworks.vercel.app/). O conteúdo pessoal está em `src/content/site.ts`.
 
-First, run the development server:
+## Rodar localmente
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra `http://localhost:3000`. Para conferir a versão de produção, use `pnpm lint && pnpm build && pnpm start`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Conteúdo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/`: perfil, contato, projetos, tecnologias e atividade no GitHub.
+- `/projects`: os três repositórios públicos de Antonio.
+- `/experience`: trajetória profissional, formação e os quatro certificados fornecidos.
+- `/contact`: formulário que abre o aplicativo de e-mail do visitante com a mensagem preenchida. O visitante confirma o envio no próprio aplicativo.
+- `/design-system`: catálogo interno com fundamentos, componentes reais, animações e regras de manutenção. A rota exige Basic Auth e não aparece na navegação. Credenciais locais em `.env.local`; em produção, configure `DESIGN_SYSTEM_USER` e `DESIGN_SYSTEM_PASSWORD` no host. Sem credenciais configuradas, a rota permanece bloqueada.
 
-## Learn More
+Para mexer no projeto, leia [BOAS_PRATICAS.md](BOAS_PRATICAS.md) e consulte o catálogo interno.
 
-To learn more about Next.js, take a look at the following resources:
+As páginas de livros e favoritos estão guardadas em `src/archived/`, e o componente de depoimentos permanece em `src/components/home.tsx`. Nenhum deles aparece no site até receber conteúdo pessoal.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A foto está em `public/antonio-profile.png` e o currículo fornecido em `public/curriculo-antonio.png`. A capa atual usa um efeito dither em Canvas 2D; a integração anterior do Unicorn Studio está guardada em `src/archived/`. As prévias de Wiip Club e Buddies foram capturadas dos heroes de seus sites; a prévia de DevLinks vem do repositório público.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Integrações
 
-## Deploy on Vercel
+- Defina `NEXT_PUBLIC_SITE_URL` com o endereço definitivo ao publicar, para gerar metadados corretos.
+- O formulário usa `mailto:` e depende de um aplicativo de e-mail instalado no dispositivo do visitante. Para envio direto, é preciso configurar um serviço de e-mail.
+- `/api/views` inicia em zero e grava as visualizações em `.data/views.json` no servidor. A pasta é ignorada pelo Git. Em hospedagem sem disco persistente ou com múltiplas instâncias, configure armazenamento compartilhado antes de publicar para manter uma contagem global confiável.
+- O calendário consulta o endpoint público de contribuições do próprio GitHub a cada hora. Se a resposta falhar, a página mostra um link para o perfil, sem exibir um número estimado.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O site publicado está em https://antonioworks.vercel.app.

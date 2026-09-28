@@ -1,0 +1,17 @@
+{
+  "age": "901",
+  "cache-control": "public, max-age=0, must-revalidate",
+  "content-encoding": "br",
+  "content-type": "text/html; charset=utf-8",
+  "date": "Mon, 17 Aug 2026 03:11:13 GMT",
+  "etag": "W/\"efedx5wnlcdrc\"",
+  "server": "Vercel",
+  "strict-transport-security": "max-age=63072000",
+  "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+  "x-matched-path": "/homepage",
+  "x-nextjs-prerender": "1",
+  "x-nextjs-stale-time": "300",
+  "x-powered-by": "Next.js",
+  "x-vercel-cache": "HIT",
+  "x-vercel-id": "gru1::iad1::6qbzf-1786937175025-ae50de3a3eb9"
+}

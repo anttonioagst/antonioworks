@@ -1,0 +1,308 @@
+{
+  "source": {
+    "url": "https://interfaces.dev/homepage",
+    "finalUrl": "https://interfaces.dev/homepage",
+    "capturedAt": "2026-08-17T03:26:21.769Z",
+    "themeAtCapture": "light",
+    "note": "Site supports light/dark via ThemeProvider (class strategy). Capture landed on light."
+  },
+  "techStack": [
+    {
+      "category": "metaFramework",
+      "name": "Next.js (App Router)",
+      "confidence": "high",
+      "evidence": "/_next/static/immutable/, __next_f RSC payload, x-powered-by: Next.js, x-nextjs-prerender"
+    },
+    {
+      "category": "hosting",
+      "name": "Vercel",
+      "confidence": "high",
+      "evidence": "server: Vercel, x-vercel-id, /_vercel/insights/script.js, SpeedInsights"
+    },
+    {
+      "category": "ui-library",
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence": "Utility soup: mx-auto max-w-190, mt-24 sm:mt-32, text-pretty, tracking-[-0.0125em], border-dashed"
+    },
+    {
+      "category": "animation",
+      "name": "Framer Motion (MotionProvider)",
+      "confidence": "high",
+      "evidence": "RSC module MotionProvider in __next_f payload"
+    },
+    {
+      "category": "fonts",
+      "name": "Inter Variable + Berkeley Mono + Libre Baskerville (+ Heldane, Mondwest, Open Runde)",
+      "confidence": "high",
+      "evidence": "woff2 preloads + body CSS variables; fontFamilies tallies"
+    },
+    {
+      "category": "analytics",
+      "name": "Vercel Analytics + Speed Insights",
+      "confidence": "high",
+      "evidence": "Analytics + SpeedInsights components in RSC tree"
+    },
+    {
+      "category": "observability",
+      "name": "Sentry",
+      "confidence": "medium",
+      "evidence": "sentry-trace / baggage meta tags"
+    }
+  ],
+  "designTokens": {
+    "color": {
+      "primary": {
+        "$value": "#00A7F4",
+        "$type": "color",
+        "role": "accent / primary CTA",
+        "evidence": "lab(63.3 -18.4 -51) on Subscribe buttons (~56 text hits + CTA fills); screenshot confirms electric blue pills"
+      },
+      "background": {
+        "$value": "#FCFCFC",
+        "$type": "color",
+        "role": "page surface (light)",
+        "evidence": "theme-color #fcfcfc; bg-gray-background; lab(~99) backgrounds"
+      },
+      "surface": {
+        "$value": "#F0F0F0",
+        "$type": "color",
+        "role": "cards / soft panels",
+        "evidence": "lab(94.78) background tally"
+      },
+      "text": {
+        "$value": "#202020",
+        "$type": "color",
+        "role": "primary ink (light)",
+        "evidence": "lab(12.3) dominant color 859×; text-gray-1200"
+      },
+      "textMuted": {
+        "$value": "#646464",
+        "$type": "color",
+        "role": "secondary / captions",
+        "evidence": "lab(42.3) 214×; gray-1100 class usage"
+      },
+      "textParagraph": {
+        "$value": "#424242",
+        "$type": "color",
+        "role": "body paragraphs",
+        "evidence": "lab(28) + text-text-paragraph class"
+      },
+      "border": {
+        "$value": "#E8E8E8",
+        "$type": "color",
+        "role": "hairline + dashed dividers",
+        "evidence": "1px solid/dashed lab(~92) borders 71+15×"
+      },
+      "canvasDark": {
+        "$value": "#0D0D0D",
+        "$type": "color",
+        "role": "dark theme page surface (inferred)",
+        "evidence": "oklch(0.173 0 0) annotation in hero; dual ThemeProvider light/dark"
+      }
+    },
+    "typography": {
+      "fontFamilies": {
+        "sans": "interVariable",
+        "mono": "berkeleyMono",
+        "serifItalic": "libreBaskerville",
+        "displaySerif": "heldane / mondwest",
+        "stacks": {
+          "sans": "interVariable, system-ui, arial",
+          "mono": "berkeleyMono, ui-monospace, monospace",
+          "serifItalic": "libreBaskerville, Georgia, serif"
+        }
+      },
+      "scale": {
+        "display": {
+          "size": "60–77px",
+          "weight": 400,
+          "lineHeight": "~1.0",
+          "letterSpacing": "tight / negative",
+          "evidence": "60px (33×), ~76.7px (6×) in fontSizes"
+        },
+        "h2": {
+          "size": "24px",
+          "weight": 500,
+          "letterSpacing": "-0.0125em",
+          "evidence": "text-2xl tracking-[-0.0125em] font-medium"
+        },
+        "body": {
+          "size": "16px",
+          "weight": 400,
+          "lineHeight": "relaxed",
+          "evidence": "16px 837×; leading-relaxed on main"
+        },
+        "bodyLg": {
+          "size": "18px",
+          "weight": 400,
+          "evidence": "md:text-lg paragraphs"
+        },
+        "small": {
+          "size": "14px",
+          "weight": 400,
+          "evidence": "14px 312×"
+        },
+        "captionMono": {
+          "size": "12–14px",
+          "family": "berkeleyMono",
+          "evidence": "blueprint labels, annotations"
+        }
+      },
+      "emphasis": "Libre Baskerville italic for stressed words inside Inter body (font-libre-baskerville on <em>)"
+    },
+    "spacing": {
+      "base": "4px",
+      "scale": ["2px", "4px", "6px", "8px", "10px", "12px", "14px", "16px", "20px", "24px", "32px", "80px", "96px", "128px"],
+      "sectionGap": "mt-24 sm:mt-32 (~96–128px)",
+      "measure": "max-w-190 (~47.5rem / ~760px) + px-5"
+    },
+    "radius": {
+      "sm": "6–8px",
+      "md": "12px",
+      "lg": "16px",
+      "full": "9999px",
+      "evidence": "12px 55× cards/panels; 9999px + huge radius pills for CTAs"
+    },
+    "shadow": {
+      "sm": "0 0 0 1px rgba(0,0,0,.06), 0 1px 2px -1px rgba(0,0,0,.06), 0 2px 4px rgba(0,0,0,.04)",
+      "note": "Soft multi-layer shadows on interactive cards (light theme). Not zero-shadow."
+    },
+    "border": {
+      "default": "1px solid #E8E8E8",
+      "dashed": "1px dashed #E8E8E8",
+      "usage": "Solid for cards; dashed for logo-cloud separators"
+    }
+  },
+  "layoutBlocks": [
+    {
+      "type": "Navbar",
+      "domHint": "nav.mx-auto.max-w-190.h-16",
+      "contentRole": "Logo + auth + single Subscribe CTA",
+      "complexity": "low",
+      "notes": "Transparent bg; height 64px; Subscribe is blue pill"
+    },
+    {
+      "type": "Hero",
+      "domHint": "main > div.mt-8 (first child)",
+      "contentRole": "Brand wordmark + editorial title mix (sans + serif italic Magazine) + author chip + primary CTA; optional craft annotations (x-height, oklch, selection handles)",
+      "complexity": "high",
+      "notes": "Meta-UI annotations teach craft; byline pill with avatar; one dominant CTA"
+    },
+    {
+      "type": "Manifesto",
+      "domHint": "section: What makes an interface feel great?",
+      "contentRole": "Editorial essay setting thesis before product proof",
+      "complexity": "medium",
+      "notes": "Narrow measure; italic emphasis; embedded interactive demo mid-copy"
+    },
+    {
+      "type": "LogoCloud",
+      "domHint": "grid border-t border-dashed company logos",
+      "contentRole": "Social proof after manifesto",
+      "complexity": "low",
+      "notes": "Dashed hairlines; grayscale wordmarks; caption above grid"
+    },
+    {
+      "type": "About",
+      "domHint": "section: About Interfaces",
+      "contentRole": "Product story + font specimen / craft showcase",
+      "complexity": "high",
+      "notes": "Mix of prose and interactive type specimens"
+    },
+    {
+      "type": "HowItWorks",
+      "domHint": "section: How it works",
+      "contentRole": "Benefit grid (monthly issue, demos, code, skills, community)",
+      "complexity": "medium",
+      "notes": "6 feature cards with icons + short copy"
+    },
+    {
+      "type": "Author",
+      "domHint": "Nice to meet you, I’m Jakub",
+      "contentRole": "Founder credibility mid-funnel",
+      "complexity": "low",
+      "notes": "Portrait + bio + outbound links"
+    },
+    {
+      "type": "Resources",
+      "domHint": "section: Read three issues for free",
+      "contentRole": "Free sample + TOC tease of craft chapters",
+      "complexity": "medium",
+      "notes": "Numbered chapter list as product preview"
+    },
+    {
+      "type": "BlogList",
+      "domHint": "section: Every issue so far",
+      "contentRole": "Catalog of all issues (depth signal)",
+      "complexity": "low",
+      "notes": "Rows: Issue N · title · chapters · New badge"
+    },
+    {
+      "type": "Pricing",
+      "domHint": "#subscribe",
+      "contentRole": "Primary conversion — plans + feature lists",
+      "complexity": "high",
+      "notes": "scroll-mt-20; multiple plan CTAs; lifetime callouts"
+    },
+    {
+      "type": "Testimonials",
+      "domHint": "section after subscribe quotes",
+      "contentRole": "Subscriber proof",
+      "complexity": "medium",
+      "notes": "Quote cards with name + role"
+    },
+    {
+      "type": "Newsletter",
+      "domHint": "Interfaces Newsletter form",
+      "contentRole": "Secondary capture for non-buyers",
+      "complexity": "low",
+      "notes": "Email + Subscribe; subscriber count"
+    },
+    {
+      "type": "FAQ",
+      "domHint": "accordion Q&A sections",
+      "contentRole": "Objection handling before footer",
+      "complexity": "medium",
+      "notes": "Native disclosure / buttons collapsed"
+    },
+    {
+      "type": "Footer",
+      "domHint": "footer.pt-12",
+      "contentRole": "Minimal legal / build stamp",
+      "complexity": "low",
+      "notes": "Sparse vs typical mega-footer"
+    }
+  ],
+  "craftPatterns": [
+    "text-wrap: pretty / balance on headings and short copy",
+    "tracking-[-0.0125em] on section titles",
+    "Concentric radius + optical alignment demos as product",
+    "Blueprint annotations (mono labels, measurement tags) in hero",
+    "Italic serif emphasis inside sans body",
+    "Dashed borders for soft sectioning",
+    "Interactive demos mid-article, not only in a features grid",
+    "disableTransitionOnChange on theme flip",
+    "One filled CTA per viewport band; secondary as text/outline"
+  ],
+  "antonioAdaptation": {
+    "keepFromInterfaces": [
+      "Narrative block order (manifesto → proof → work catalog → about → CTA)",
+      "Narrow editorial measure (~60–75ch / ~760px content column)",
+      "Section rhythm mt-24/32",
+      "Interactive craft demos",
+      "Issue-list / work-row pattern",
+      "Author byline chip",
+      "text-pretty / balance / tabular-nums",
+      "Theme flip without animating all properties"
+    ],
+    "replaceWithAntonioLock": {
+      "fonts": "Geist + Geist Mono only — no Inter, no Libre Baskerville, no serif pairing",
+      "cta": "Ink fill (white on dark / black on light) — never #00A7F4, never #FF7A17",
+      "weight": "400 only — map Interfaces 500/600 titles to size+tracking+mute",
+      "elevation": "Hairline 1px, no multi-layer card shadows",
+      "radius": "Standalone controls = pill 9999px; cards/inputs = 8px",
+      "logos": "Light disc on dark canvas; dark disc on light canvas (contrast)"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "targetUrl": "https://interfaces.dev/homepage",
+  "finalUrl": "https://interfaces.dev/homepage",
+  "depth": "full",
+  "audits": false,
+  "capturedAt": "2026-08-17T03:26:21.769Z",
+  "files": {
+    "html": "raw/html.html",
+    "headers": "raw/headers.json",
+    "signals": "raw/signals.json",
+    "computedStyles": "raw/computed-styles.json",
+    "layout": "raw/layout.json",
+    "auditSignals": "raw/audit-signals.json",
+    "requests": "raw/requests.json",
+    "desktopScreenshot": "raw/desktop.png",
+    "mobileScreenshot": "raw/mobile.png"
+  },
+  "stats": {
+    "elementsCounted": 1488,
+    "layoutSections": 13,
+    "requests": 45
+  }
+}

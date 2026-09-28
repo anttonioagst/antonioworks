@@ -1,0 +1,2 @@
+import { Frame } from '@/components/frame';import { ProjectGrid } from '@/components/home';import Link from 'next/link';
+export default function ProjectsPage(){return <Frame><div className="inner-page"><div className="sub-back"><Link href="/" className="back-link">← INÍCIO</Link></div><div className="sub-intro"><h1 className="serif">Projetos</h1><p>Projetos públicos de desenvolvimento, comunidade e design.</p></div><div className="all-projects"><ProjectGrid/></div></div></Frame>}

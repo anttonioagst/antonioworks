@@ -1,0 +1,705 @@
+{
+  "elementsCounted": 1488,
+  "colors": [
+    {
+      "value": "lab(12.304 -0.00000745058 0)",
+      "count": 859
+    },
+    {
+      "value": "lab(42.348 0 0)",
+      "count": 214
+    },
+    {
+      "value": "lab(28.08 0 -0.00000596046)",
+      "count": 74
+    },
+    {
+      "value": "lab(54.76 0 0)",
+      "count": 73
+    },
+    {
+      "value": "lab(63.3038 -18.433 -51.0407)",
+      "count": 56
+    },
+    {
+      "value": "lab(58.588 0 0)",
+      "count": 46
+    },
+    {
+      "value": "lab(75.872 0 0)",
+      "count": 31
+    },
+    {
+      "value": "color(display-p3 0.388235 0.388235 0.388235)",
+      "count": 24
+    },
+    {
+      "value": "color(display-p3 0.83488 0.207921 0.387456)",
+      "count": 12
+    },
+    {
+      "value": "lab(94.78 0 0)",
+      "count": 11
+    },
+    {
+      "value": "color(display-p3 0.854172 0.502144 0.209646)",
+      "count": 10
+    },
+    {
+      "value": "color(display-p3 0.246852 0.642335 0.817202)",
+      "count": 7
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "count": 6
+    },
+    {
+      "value": "color(display-p3 0.266455 0.667541 0.435918)",
+      "count": 6
+    },
+    {
+      "value": "color(display-p3 0.327292 0.790977 0.99566)",
+      "count": 6
+    },
+    {
+      "value": "color(display-p3 0.259723 0.647032 0.276349)",
+      "count": 6
+    },
+    {
+      "value": "lab(65.0361 -1.42065 -56.9802)",
+      "count": 5
+    },
+    {
+      "value": "lab(70.687 -23.6078 -45.9483)",
+      "count": 4
+    },
+    {
+      "value": "lab(98.956 0.0000298023 -0.0000119209)",
+      "count": 4
+    },
+    {
+      "value": "lab(70.5521 -66.5147 45.8073)",
+      "count": 3
+    },
+    {
+      "value": "lab(55.4814 75.0732 48.8528)",
+      "count": 3
+    },
+    {
+      "value": "rgb(119, 119, 119)",
+      "count": 2
+    },
+    {
+      "value": "rgb(124, 131, 255)",
+      "count": 2
+    },
+    {
+      "value": "color(display-p3 0.660755 0.179954 0.8154)",
+      "count": 2
+    },
+    {
+      "value": "rgb(88, 101, 242)",
+      "count": 2
+    },
+    {
+      "value": "lab(70.0429 42.5156 75.8207)",
+      "count": 2
+    },
+    {
+      "value": "lab(78.503 -64.9265 39.7492)",
+      "count": 2
+    },
+    {
+      "value": "lab(56.9303 76.8162 -8.07021)",
+      "count": 1
+    },
+    {
+      "value": "lab(58.8049 23.1474 -63.8066 / 0.7)",
+      "count": 1
+    }
+  ],
+  "backgroundColors": [
+    {
+      "value": "lab(100 0 0)",
+      "count": 120
+    },
+    {
+      "value": "lab(94.78 0 0)",
+      "count": 57
+    },
+    {
+      "value": "rgb(252, 252, 252)",
+      "count": 35
+    },
+    {
+      "value": "oklab(0.684991 -0.0912492 -0.142231 / 0.1)",
+      "count": 19
+    },
+    {
+      "value": "lab(98.956 0.0000298023 -0.0000119209)",
+      "count": 18
+    },
+    {
+      "value": "lab(96.752 0 0)",
+      "count": 10
+    },
+    {
+      "value": "lab(89.212 -0.0000298023 0.0000119209)",
+      "count": 9
+    },
+    {
+      "value": "lab(91.996 -0.0000298023 0.0000119209)",
+      "count": 6
+    },
+    {
+      "value": "lab(12.304 -0.00000745058 0)",
+      "count": 6
+    },
+    {
+      "value": "lab(85.3886 -36.7636 -21.5716)",
+      "count": 2
+    },
+    {
+      "value": "lab(70.687 -23.6078 -45.9483)",
+      "count": 2
+    },
+    {
+      "value": "lab(96.1861 -13.8464 6.52365)",
+      "count": 2
+    },
+    {
+      "value": "oklab(0.622989 -0.0378532 -0.210606 / 0.05)",
+      "count": 1
+    },
+    {
+      "value": "rgb(17, 17, 17)",
+      "count": 1
+    },
+    {
+      "value": "oklab(0.656006 0.239783 -0.0238809 / 0.1)",
+      "count": 1
+    },
+    {
+      "value": "oklab(0.684991 -0.0912492 -0.142231 / 0.05)",
+      "count": 1
+    },
+    {
+      "value": "oklch(0.8 0.193 280)",
+      "count": 1
+    },
+    {
+      "value": "oklch(0.8 0.193 240)",
+      "count": 1
+    },
+    {
+      "value": "oklch(0.8 0.193 220)",
+      "count": 1
+    },
+    {
+      "value": "oklch(0.8 0.193 180)",
+      "count": 1
+    },
+    {
+      "value": "oklch(0.8 0.193 160)",
+      "count": 1
+    },
+    {
+      "value": "oklch(0.8 0.193 120)",
+      "count": 1
+    },
+    {
+      "value": "oklch(0.8 0.193 80)",
+      "count": 1
+    },
+    {
+      "value": "oklch(0.8 0.193 40)",
+      "count": 1
+    },
+    {
+      "value": "oklch(0.8 0.193 20)",
+      "count": 1
+    },
+    {
+      "value": "oklch(0.8 0.193 0)",
+      "count": 1
+    },
+    {
+      "value": "lab(48.1124 29.0442 -73.9905 / 0.15)",
+      "count": 1
+    },
+    {
+      "value": "lab(92.243 10.2865 3.83865)",
+      "count": 1
+    },
+    {
+      "value": "lab(94.7127 3.58394 14.3151)",
+      "count": 1
+    },
+    {
+      "value": "lab(92.0301 -2.24757 -11.6453)",
+      "count": 1
+    },
+    {
+      "value": "oklab(0.745991 -0.0970495 -0.127188 / 0.1)",
+      "count": 1
+    },
+    {
+      "value": "oklab(0.745991 -0.0970495 -0.127188 / 0.05)",
+      "count": 1
+    }
+  ],
+  "fontFamilies": [
+    {
+      "value": "interVariable, \"interVariable Fallback\", system-ui, arial",
+      "count": 1124
+    },
+    {
+      "value": "berkeleyMono, \"berkeleyMono Fallback\", ui-monospace, monospace",
+      "count": 302
+    },
+    {
+      "value": "openRunde, \"openRunde Fallback\", system-ui, arial",
+      "count": 19
+    },
+    {
+      "value": "heldane, \"heldane Fallback\", Georgia, serif",
+      "count": 18
+    },
+    {
+      "value": "mondwest, \"mondwest Fallback\", Georgia, serif",
+      "count": 13
+    },
+    {
+      "value": "libreBaskerville, \"libreBaskerville Fallback\", Georgia, serif",
+      "count": 12
+    }
+  ],
+  "fontSizes": [
+    {
+      "value": "16px",
+      "count": 837
+    },
+    {
+      "value": "14px",
+      "count": 312
+    },
+    {
+      "value": "18px",
+      "count": 141
+    },
+    {
+      "value": "13px",
+      "count": 108
+    },
+    {
+      "value": "60px",
+      "count": 33
+    },
+    {
+      "value": "20px",
+      "count": 20
+    },
+    {
+      "value": "12px",
+      "count": 14
+    },
+    {
+      "value": "24px",
+      "count": 8
+    },
+    {
+      "value": "76.725px",
+      "count": 6
+    },
+    {
+      "value": "11px",
+      "count": 4
+    },
+    {
+      "value": "36px",
+      "count": 3
+    },
+    {
+      "value": "30px",
+      "count": 2
+    }
+  ],
+  "fontWeights": [
+    {
+      "value": "400",
+      "count": 1191
+    },
+    {
+      "value": "500",
+      "count": 223
+    },
+    {
+      "value": "450",
+      "count": 60
+    },
+    {
+      "value": "600",
+      "count": 13
+    },
+    {
+      "value": "700",
+      "count": 1
+    }
+  ],
+  "borderRadii": [
+    {
+      "value": "3.35544e+07px",
+      "count": 200
+    },
+    {
+      "value": "12px",
+      "count": 55
+    },
+    {
+      "value": "8px",
+      "count": 33
+    },
+    {
+      "value": "16px",
+      "count": 17
+    },
+    {
+      "value": "9999px",
+      "count": 9
+    },
+    {
+      "value": "6px",
+      "count": 9
+    },
+    {
+      "value": "4px",
+      "count": 3
+    },
+    {
+      "value": "24px",
+      "count": 3
+    },
+    {
+      "value": "20px",
+      "count": 1
+    }
+  ],
+  "boxShadows": [
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px -1px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px",
+      "count": 87
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px -1px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px",
+      "count": 12
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "count": 11
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "count": 7
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "count": 5
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.09) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "count": 4
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.06) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.1) 0px 1.5px 2px 0px, lab(63.3038 -18.433 -51.0407) 0px 0px 0px 1px",
+      "count": 3
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
+      "count": 2
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.745991 -0.0970495 -0.127188 / 0.5) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "count": 2
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "count": 1
+    }
+  ],
+  "borders": [
+    {
+      "value": "1px solid lab(91.996 -0.0000298023 0.0000119209)",
+      "count": 71
+    },
+    {
+      "value": "1px solid lab(94.78 0 0)",
+      "count": 19
+    },
+    {
+      "value": "1px dashed lab(91.996 -0.0000298023 0.0000119209)",
+      "count": 15
+    },
+    {
+      "value": "1px solid oklab(0 0 0 / 0.05)",
+      "count": 10
+    },
+    {
+      "value": "1px solid rgb(88, 101, 242)",
+      "count": 9
+    },
+    {
+      "value": "1px dashed lab(89.212 -0.0000298023 0.0000119209)",
+      "count": 7
+    },
+    {
+      "value": "1px solid lab(54.1736 13.3369 -74.6839)",
+      "count": 5
+    },
+    {
+      "value": "1px solid lab(63.3038 -18.433 -51.0407)",
+      "count": 2
+    },
+    {
+      "value": "1px solid rgb(17, 17, 17)",
+      "count": 1
+    },
+    {
+      "value": "1px solid lab(70.687 -23.6078 -45.9483)",
+      "count": 1
+    },
+    {
+      "value": "2px dashed lab(75.872 0 0)",
+      "count": 1
+    },
+    {
+      "value": "1px solid lab(48.1124 29.0442 -73.9905 / 0.2)",
+      "count": 1
+    }
+  ],
+  "spacing": [
+    {
+      "value": "4px",
+      "count": 153
+    },
+    {
+      "value": "16px",
+      "count": 116
+    },
+    {
+      "value": "8px",
+      "count": 97
+    },
+    {
+      "value": "12px",
+      "count": 69
+    },
+    {
+      "value": "20px",
+      "count": 53
+    },
+    {
+      "value": "10px",
+      "count": 47
+    },
+    {
+      "value": "6px",
+      "count": 40
+    },
+    {
+      "value": "32px",
+      "count": 30
+    },
+    {
+      "value": "2px",
+      "count": 24
+    },
+    {
+      "value": "-1px",
+      "count": 16
+    },
+    {
+      "value": "14px",
+      "count": 16
+    },
+    {
+      "value": "24px",
+      "count": 14
+    },
+    {
+      "value": "128px",
+      "count": 8
+    },
+    {
+      "value": "1px",
+      "count": 5
+    },
+    {
+      "value": "80px",
+      "count": 4
+    },
+    {
+      "value": "8.525px",
+      "count": 3
+    },
+    {
+      "value": "96px",
+      "count": 2
+    },
+    {
+      "value": "28px",
+      "count": 1
+    },
+    {
+      "value": "17.05px",
+      "count": 1
+    },
+    {
+      "value": "76px",
+      "count": 1
+    },
+    {
+      "value": "48px",
+      "count": 1
+    },
+    {
+      "value": "64px",
+      "count": 1
+    }
+  ],
+  "lineHeights": [
+    {
+      "value": "26px",
+      "count": 790
+    },
+    {
+      "value": "20px",
+      "count": 175
+    },
+    {
+      "value": "28px",
+      "count": 139
+    },
+    {
+      "value": "22.75px",
+      "count": 137
+    },
+    {
+      "value": "21.125px",
+      "count": 88
+    },
+    {
+      "value": "24px",
+      "count": 39
+    },
+    {
+      "value": "60px",
+      "count": 33
+    },
+    {
+      "value": "16px",
+      "count": 22
+    },
+    {
+      "value": "18.5714px",
+      "count": 20
+    },
+    {
+      "value": "27.5px",
+      "count": 18
+    },
+    {
+      "value": "32px",
+      "count": 8
+    },
+    {
+      "value": "76.725px",
+      "count": 6
+    }
+  ],
+  "letterSpacing": [
+    {
+      "value": "-1.5px",
+      "count": 33
+    },
+    {
+      "value": "-0.2px",
+      "count": 18
+    },
+    {
+      "value": "-0.3px",
+      "count": 8
+    },
+    {
+      "value": "-0.5px",
+      "count": 2
+    }
+  ],
+  "headings": {
+    "h1": [
+      {
+        "text": "Interfacesx-heightoklch(0.991 0 0)oklch(0.173 0 0)",
+        "fontSize": "60px",
+        "fontWeight": "500",
+        "color": "lab(12.304 -0.00000745058 0)"
+      }
+    ],
+    "h2": [
+      {
+        "text": "What makes an interface feel great?",
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "color": "lab(12.304 -0.00000745058 0)"
+      },
+      {
+        "text": "About Interfaces",
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "color": "lab(12.304 -0.00000745058 0)"
+      },
+      {
+        "text": "How it works",
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "color": "lab(12.304 -0.00000745058 0)"
+      },
+      {
+        "text": "Every issue so far",
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "color": "lab(12.304 -0.00000745058 0)"
+      }
+    ],
+    "h3": [
+      {
+        "text": "New issue every month",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "color": "lab(12.304 -0.00000745058 0)"
+      },
+      {
+        "text": "Interactive demos",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "color": "lab(12.304 -0.00000745058 0)"
+      },
+      {
+        "text": "Source code",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "color": "lab(12.304 -0.00000745058 0)"
+      },
+      {
+        "text": "Agent skills",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "color": "lab(12.304 -0.00000745058 0)"
+      },
+      {
+        "text": "Bookmarks and tools",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "color": "lab(12.304 -0.00000745058 0)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "url": "https://interfaces.dev/homepage",
+    "type": "document",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/2ubsa8buusesh.css",
+    "type": "stylesheet",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/0tvd3ts2ejpea.css",
+    "type": "stylesheet",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/2w9lp73y5tx1v.css",
+    "type": "stylesheet",
+    "status": 200,
+    "size": 946
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/media/BerkeleyMono_Regular-s.p.3qlq2d8mgtnhj.woff2",
+    "type": "font",
+    "status": 200,
+    "size": 23868
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/media/BerkeleyMono_Bold-s.p.1p7dkm_9eu_h1.woff2",
+    "type": "font",
+    "status": 200,
+    "size": 24264
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/16o75r5vn93k5.css",
+    "type": "stylesheet",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/media/InterVariable-s.p.3ggrpudipw7rt.woff2",
+    "type": "font",
+    "status": 200,
+    "size": 147032
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/3z65s5avujp7-.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/turbopack-03t6iccmh2-zs.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/0bi0zn68it7pk.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/12-9m4lxt8p16.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/0njtqty131ywg.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/0cdybzx_1e23z.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/3a0764bxw6goy.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/2s4oq-bwt5vvz.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/3hkc_fi6l9a6s.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/30x5pqthdiks2.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/28cfo9cb7osig.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/3wet8lxxx5g2t.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/2im1-yoadljru.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/1-0iw0zwf5p58.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/0eqr9b70ev8cn.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/15wp36yz6j5dp.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/media/libre_baskerville_italic-s.p.34xn0vbwv1tr5.woff2",
+    "type": "font",
+    "status": 200,
+    "size": 30684
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/1--5299eut--d.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/0zrjb-3ovqgvf.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/media/OpenRunde_Medium-s.04blcs0sh21s5.woff2",
+    "type": "font",
+    "status": 200,
+    "size": 28408
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/3qx2olw9la88z.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/media/heldane_text_regular-s.2-5nsxb-hwgev.woff2",
+    "type": "font",
+    "status": 200,
+    "size": 57034
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/media/OpenRunde_Semibold-s.24dh75gx-jld7.woff2",
+    "type": "font",
+    "status": 200,
+    "size": 28120
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/media/PPMondwest_Regular-s.3bmlrq-4lozy7.woff2",
+    "type": "font",
+    "status": 200,
+    "size": 59096
+  },
+  {
+    "url": "https://interfaces.dev/monitoring?o=4511382459056128&p=4511382459514960&r=de",
+    "type": "fetch",
+    "status": 200,
+    "size": 2
+  },
+  {
+    "url": "https://interfaces.dev/monitoring?o=4511382459056128&p=4511382459514960&r=de",
+    "type": "fetch",
+    "status": 200,
+    "size": 2
+  },
+  {
+    "url": "https://interfaces.dev/_vercel/insights/script.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://ho1jr3x2dcwdu3t5.public.blob.vercel-storage.com/homepage/platform.avif",
+    "type": "image",
+    "status": 200,
+    "size": 70085
+  },
+  {
+    "url": "https://interfaces.dev/_next/image?url=https%3A%2F%2Foiszjiwtfc65cwa2.public.blob.vercel-storage.com%2Fdetails-that-make-interfaces-feel-better%2Fsea.avif&w=1080&q=75",
+    "type": "image",
+    "status": 200,
+    "size": 21925
+  },
+  {
+    "url": "https://interfaces.dev/556032e9b57522e8/script.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/?_rsc=FwQ2gsZLzkY6TIOG",
+    "type": "fetch",
+    "status": 200,
+    "size": 957
+  },
+  {
+    "url": "https://interfaces.dev/login?_rsc=FwQ2gsZLzkY6TIOG",
+    "type": "fetch",
+    "status": 200,
+    "size": 965
+  },
+  {
+    "url": "https://interfaces.dev/?_rsc=FK9r5zamgem7ik_O",
+    "type": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/login?_rsc=UCUciimiKdk-qflu",
+    "type": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/3x4qwy_ped24a.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/0661kjx4aw1fw.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "url": "https://interfaces.dev/_next/static/immutable/chunks/44fni47ss8sdw.js",
+    "type": "script",
+    "status": 200,
+    "size": 0
+  }
+]

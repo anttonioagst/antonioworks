@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Interfaces › Design Engineering Magazine",
+    "metaDescription": "Interfaces is a design engineering magazine about building great interfaces that covers topics such as animation, typography, layout and color.",
+    "canonical": "",
+    "h1Count": 1,
+    "headingOutline": [
+      "H1: Interfacesx-heightoklch(0.991 0 0)oklch(0.173 0 0)",
+      "H2: What makes an interface feel great?",
+      "H2: About Interfaces",
+      "H2: How it works",
+      "H3: New issue every month",
+      "H3: Interactive demos",
+      "H3: Source code",
+      "H3: Agent skills",
+      "H3: Bookmarks and tools",
+      "H3: Private Discord community",
+      "H3: Nice to meet you, I’m Jakub",
+      "H3: Read three issues for free",
+      "H2: Every issue so far",
+      "H3: Start building great interfaces today",
+      "H3: Interfaces Newsletter",
+      "H3: Is Interfaces a physical magazine?",
+      "H3: What level of experience is this for?",
+      "H3: Who is the magazine for?",
+      "H3: What does an issue include?",
+      "H3: Do I get access to past issues?",
+      "H3: How often do new issues get released?",
+      "H3: Is there a way to see what’s new in the magazine?",
+      "H3: What do I get with a subscription?",
+      "H3: Do you support Purchasing Power Parity?",
+      "H3: Do you offer discounts for students or other groups?",
+      "H3: Can I cancel my subscription?",
+      "H3: How does the lifetime plan work?",
+      "H3: How can I contact you?"
+    ],
+    "imgCount": 16,
+    "imgMissingAlt": 6,
+    "hasViewportMeta": true,
+    "ctaButtons": [
+      "Subscribe",
+      "Subscribe Now",
+      "Subscribe Now",
+      "Subscribe",
+      "Subscribe",
+      "Subscribe",
+      "Subscribe",
+      "How can I contact you?"
+    ]
+  },
+  "weight": {
+    "requestCount": 45,
+    "totalBytes": 493388,
+    "byType": {
+      "document": 1,
+      "stylesheet": 4,
+      "font": 8,
+      "script": 24,
+      "fetch": 6,
+      "image": 2
+    },
+    "largestResources": [
+      {
+        "url": "https://interfaces.dev/_next/static/immutable/media/InterVariable-s.p.3ggrpudipw7rt.woff2",
+        "type": "font",
+        "size": 147032
+      },
+      {
+        "url": "https://ho1jr3x2dcwdu3t5.public.blob.vercel-storage.com/homepage/platform.avif",
+        "type": "image",
+        "size": 70085
+      },
+      {
+        "url": "https://interfaces.dev/_next/static/immutable/media/PPMondwest_Regular-s.3bmlrq-4lozy7.woff2",
+        "type": "font",
+        "size": 59096
+      },
+      {
+        "url": "https://interfaces.dev/_next/static/immutable/media/heldane_text_regular-s.2-5nsxb-hwgev.woff2",
+        "type": "font",
+        "size": 57034
+      },
+      {
+        "url": "https://interfaces.dev/_next/static/immutable/media/libre_baskerville_italic-s.p.34xn0vbwv1tr5.woff2",
+        "type": "font",
+        "size": 30684
+      },
+      {
+        "url": "https://interfaces.dev/_next/static/immutable/media/OpenRunde_Medium-s.04blcs0sh21s5.woff2",
+        "type": "font",
+        "size": 28408
+      },
+      {
+        "url": "https://interfaces.dev/_next/static/immutable/media/OpenRunde_Semibold-s.24dh75gx-jld7.woff2",
+        "type": "font",
+        "size": 28120
+      },
+      {
+        "url": "https://interfaces.dev/_next/static/immutable/media/BerkeleyMono_Bold-s.p.1p7dkm_9eu_h1.woff2",
+        "type": "font",
+        "size": 24264
+      },
+      {
+        "url": "https://interfaces.dev/_next/static/immutable/media/BerkeleyMono_Regular-s.p.3qlq2d8mgtnhj.woff2",
+        "type": "font",
+        "size": 23868
+      },
+      {
+        "url": "https://interfaces.dev/_next/image?url=https%3A%2F%2Foiszjiwtfc65cwa2.public.blob.vercel-storage.com%2Fdetails-that-make-interfaces-feel-better%2Fsea.avif&w=108",
+        "type": "image",
+        "size": 21925
+      },
+      {
+        "url": "https://interfaces.dev/login?_rsc=FwQ2gsZLzkY6TIOG",
+        "type": "fetch",
+        "size": 965
+      },
+      {
+        "url": "https://interfaces.dev/?_rsc=FwQ2gsZLzkY6TIOG",
+        "type": "fetch",
+        "size": 957
+      }
+    ]
+  },
+  "finalUrl": "https://interfaces.dev/homepage"
+}
