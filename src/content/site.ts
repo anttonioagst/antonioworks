@@ -19,19 +19,20 @@ export const site = {
     { label: 'E-mail', href: 'mailto:anttonioaugustofc@gmail.com', icon: 'mail' },
     { label: 'GitHub', href: 'https://github.com/anttonioagst', icon: 'github' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/anttonioagst/', icon: 'linkedin' },
-    { label: 'Telefone', href: 'tel:+5547992381870', icon: 'phone' },
     { label: 'Instagram', href: 'https://www.instagram.com/anttonioaugusto_/', icon: 'instagram' },
     { label: 'Currículo', href: '/curriculo-antonio.png', icon: 'resume' },
   ],
   projects: [
-    { title: 'DevLinks', subtitle: 'Seus links em um só lugar.', description: 'Um cartão de visitas digital para reunir projetos, contatos e redes em uma interface simples e direta.', tags: ['HTML', 'CSS', 'JavaScript'], image: '/projects/dev-links.jpg', url: 'https://anttonioagst.github.io/dev-links/', repo: 'https://github.com/anttonioagst/dev-links' },
-    { title: 'Wiip Club', subtitle: 'Comunidades para construir em público.', description: 'Espaço para descobrir comunidades, acompanhar projetos reais e compartilhar a jornada de criação.', tags: ['Comunidade', 'Design', 'UI'], image: '/projects/wiip-hero.jpg', url: 'https://wiip.club/', repo: 'https://github.com/anttonioagst/wiipclub' },
-    { title: 'Buddies', subtitle: 'Pack de agentes e fluxos de IA.', description: 'Landing page para apresentar bundles de IA e fluxos de trabalho vendidos na Whop.', tags: ['TypeScript', 'Whop', 'Workflows'], image: '/projects/buddies-live-hero.png', url: 'https://crevos.whop.site/', repo: 'https://github.com/anttonioagst/buddies' },
+    { title: 'DevLinks', subtitle: 'Seus links em um só lugar.', description: 'Um cartão de visitas digital para reunir projetos, contatos e redes em uma interface simples e direta.', detail: 'Um agregador de links pessoais que reúne projetos, redes sociais e formas de contato em uma página simples, usada como cartão de visitas digital.', stack: ['HTML', 'CSS', 'JavaScript', 'Figma'], ai: 'Claude Code e Cursor', tags: ['HTML', 'CSS', 'JavaScript'], image: '/projects/dev-links.jpg', url: 'https://anttonioagst.github.io/dev-links/', repo: 'https://github.com/anttonioagst/dev-links' },
+    { title: 'Wiip Club', subtitle: 'Comunidades para construir em público.', description: 'Espaço para descobrir comunidades, acompanhar projetos reais e compartilhar a jornada de criação.', detail: 'Uma comunidade voltada a quem constrói em público. A página apresenta a proposta, os projetos compartilhados e a identidade visual do Wiip Club.', stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'], ai: 'Claude Code e Cursor', tags: ['Comunidade', 'Design', 'UI'], image: '/projects/wiip-hero.jpg', url: 'https://wiip.club/', repo: 'https://github.com/anttonioagst/wiipclub' },
+    { title: 'Buddies', subtitle: 'Pack de agentes e fluxos de IA.', description: 'Landing page para apresentar bundles de IA e fluxos de trabalho vendidos na Whop.', detail: 'Uma vitrine para bundles de agentes, bots e fluxos de trabalho. Apresenta a oferta e direciona a compra pela Whop.', stack: ['Vite', 'React', 'TypeScript', 'Tailwind CSS', 'GSAP', 'Whop'], ai: 'Claude Code e Cursor', tags: ['TypeScript', 'Whop', 'Workflows'], image: '/projects/buddies-live-hero.png', url: 'https://crevos.whop.site/', repo: 'https://github.com/anttonioagst/buddies' },
   ],
   stack: [
     ['HTML','frontend','https://developer.mozilla.org/pt-BR/docs/Web/HTML',261.63],
     ['CSS','frontend','https://developer.mozilla.org/pt-BR/docs/Web/CSS',293.66],
     ['JavaScript','frontend','https://developer.mozilla.org/pt-BR/docs/Web/JavaScript',329.63],
+    ['Git','tools','https://git-scm.com/',349.23],
+    ['GitHub','tools','https://github.com/',369.99],
     ['VS Code','tools','https://code.visualstudio.com/',392],
     ['Cursor','tools','https://cursor.com/',440],
     ['Codex','tools','https://openai.com/codex/',523.25],
@@ -61,17 +62,17 @@ export const site = {
         { src: '/experience/estel/checklist-montagem.png', alt: 'Tela de Checklist de Montagem do painel da Qualidade da Estel', caption: 'Checklist de Montagem' },
       ],
     },
-    { company: 'Complementary Projetos', role: 'Assistente de Projetos', period: '2022–2025', description: 'Projetos arquitetônicos e de engenharia em BIM com Revit e AutoCAD.', logo: '/companies/complementary-premium.png' },
+    { company: 'Complementary Projetos', role: 'Projetista', period: '2022–2025', description: 'Projetos arquitetônicos e de engenharia em BIM com Revit e AutoCAD.', logo: '/companies/complementary-icon.png' },
     { company: 'Blackbox', role: 'Modelagem 3D para arquitetura', period: '2021', description: 'Produção de modelos com 3ds Max e AutoCAD.', logo: '/companies/blackbox.svg' },
     { company: 'Construtora Pasqualotto', role: 'Jovem Aprendiz — Engenharia', period: '2020', description: 'Início profissional na área de engenharia.', logo: '/companies/pasqualotto-premium.png' },
   ],
   education: [
-    { institution: 'Uninter', course: 'Tecnólogo em Análise e Desenvolvimento de Sistemas', period: '2026–atual', logo: '/education/uninter.png', certificates: [] },
-    { institution: 'Human Academy', course: 'Workshops de inteligência artificial e agentes', period: '2026', logo: '/education/human-mark.svg', certificates: [
+    { institution: 'Uninter', course: 'Tecnólogo em Análise e Desenvolvimento de Sistemas', period: '2026–atual', status: 'Em andamento', description: 'Graduação em Análise e Desenvolvimento de Sistemas, atualmente em curso.', logo: '/education/uninter-upscaled.png', certificates: [] },
+    { institution: 'Human Academy', course: 'Workshops de inteligência artificial e agentes', period: '2026', status: 'Concluído', description: 'Dois workshops sobre agentes de inteligência artificial, com 30 horas de formação concluídas.', logo: '/education/human-mark.svg', certificates: [
       { title: 'Agent Lab', detail: 'Workshop de Agentes · 16h · 2026', image: '/certificates/human-agent-lab.png' },
       { title: 'Agent Lab Build', detail: 'Workshop · 14h · 2026', image: '/certificates/human-agent-lab-build.png' },
     ] },
-    { institution: 'Rocketseat', course: 'Fundamentos de desenvolvimento web e Git', period: '2025', logo: '/education/rocketseat-icon.jpg', certificates: [
+    { institution: 'Rocketseat', course: 'Fundamentos de desenvolvimento web e Git', period: '2025', status: 'Concluído', description: 'Cursos de programação web e controle de versão com Git e GitHub, com 13 horas concluídas.', logo: '/education/rocketseat-icon.jpg', certificates: [
       { title: 'Discover', detail: 'Programação web · 12h · 2025', image: '/certificates/rocketseat-discover.png' },
       { title: 'O básico de Git e GitHub', detail: 'Controle de versão · 1h · 2025', image: '/certificates/rocketseat-git-github.png' },
     ] },
