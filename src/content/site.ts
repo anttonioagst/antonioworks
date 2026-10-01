@@ -9,7 +9,7 @@ export const site = {
   banner: '/banner.gif',
   portraits: ['/antonio-profile-upscaled.png'],
   githubUser: 'anttonioagst',
-  roles: ['Assistente de Projetos', 'Graduando em ADS', 'Automação com IA'],
+  roles: ['Assistente de Projetos', 'Estudante de ADS', 'Automação com IA'],
   availability: 'Buscando primeira oportunidade em tecnologia',
   about: [
     'Atuei em projetos de <b>arquitetura e engenharia</b>, usando diariamente ferramentas como AutoCAD, Revit e 3ds Max.',
