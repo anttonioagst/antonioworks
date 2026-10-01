@@ -26,7 +26,7 @@ export function proxy(request: NextRequest) {
   }
 
   if (!allowed) {
-    return new NextResponse('Acesso restrito ao design system.', {
+    return new NextResponse('Acesso restrito.', {
       status: 401,
       headers: {
         'WWW-Authenticate': 'Basic realm="Antonio Design System", charset="UTF-8"',
@@ -42,4 +42,4 @@ export function proxy(request: NextRequest) {
   return response;
 }
 
-export const config = { matcher: '/design-system/:path*' };
+export const config = { matcher: ['/admin/:path*'] };

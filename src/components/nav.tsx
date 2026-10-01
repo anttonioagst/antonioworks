@@ -12,12 +12,19 @@ const links = [
   { label: 'Início', href: '/' },
   { label: 'Projetos', href: '/projects' },
   { label: 'Experiência', href: '/experience' },
+  { label: 'Contato', href: '/contact' },
 ];
-const extraLinks = [{ label: 'Contato', href: '/contact' }];
+const adminLinks = [
+  { label: 'Painel', href: '/admin' },
+  { label: 'Design system', href: '/admin/design-system' },
+  { label: 'Mensagens', href: '/admin/mensagens' },
+];
 
 export function Nav() {
   const path = usePathname();
+  const inAdmin = path === '/admin' || path.startsWith('/admin/');
   const moreRef = useRef<HTMLDivElement>(null);
+  const mobileRef = useRef<HTMLDivElement>(null);
   const [more, setMore] = useState(false);
   const [mobile, setMobile] = useState(false);
   const [day, setDay] = useState(false);
@@ -30,9 +37,17 @@ export function Nav() {
   useEffect(() => {
     const close = (event: PointerEvent) => {
       if (moreRef.current && !moreRef.current.contains(event.target as Node)) setMore(false);
+      if (mobileRef.current && !mobileRef.current.contains(event.target as Node)) setMobile(false);
+    };
+    const escape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { setMore(false); setMobile(false); }
     };
     document.addEventListener('pointerdown', close);
-    return () => document.removeEventListener('pointerdown', close);
+    document.addEventListener('keydown', escape);
+    return () => {
+      document.removeEventListener('pointerdown', close);
+      document.removeEventListener('keydown', escape);
+    };
   }, []);
 
   function toggleTheme(event: React.MouseEvent<HTMLButtonElement>) {
@@ -66,25 +81,26 @@ export function Nav() {
 
   const dot = (href: string) => (hovered ?? path) === href &&
     <motion.span className="nav-dot" layoutId="nav-dot" transition={{ type: 'spring', stiffness: 380, damping: 28 }} />;
-  const themeButton = <button className="nav-icon" aria-label="Toggle theme" onClick={toggleTheme}>{day ? <FiMoon /> : <FiSun />}</button>;
+  const themeButton = <button className="nav-icon" aria-label={day ? 'Ativar tema escuro' : 'Ativar tema claro'} onClick={toggleTheme}>{day ? <FiMoon /> : <FiSun />}</button>;
 
-  return <nav className="nav">
+  return <><div className="nav-backdrop" aria-hidden="true"/><nav className="nav">
     <Link href="/" className="serif" style={{ fontSize: 30 }}>{site.wordmark}</Link>
     <div className="nav-links">
       {links.map(({ label, href }) => <Link className={`nav-link ${path === href ? 'active' : ''}`} href={href} key={href} onMouseEnter={() => setHovered(href)} onMouseLeave={() => setHovered(null)}>{label}{dot(href)}</Link>)}
-      <div ref={moreRef} style={{ position: 'relative' }} onMouseEnter={() => setMore(true)} onMouseLeave={() => setMore(false)}>
-        <button className="nav-link" onClick={() => setMore(!more)} style={{ border: 0, background: 'none', color: 'inherit', gap: 4 }}>Mais <FiChevronDown style={{ transform: more ? 'rotate(180deg)' : '', transition: 'transform .2s' }} /></button>
+      {inAdmin && <div ref={moreRef} style={{ position: 'relative' }} onMouseEnter={() => setMore(true)} onMouseLeave={() => setMore(false)}>
+        <button className="nav-link" onClick={() => setMore(!more)} style={{ border: 0, background: 'none', color: 'inherit', gap: 4 }}>Admin <FiChevronDown style={{ transform: more ? 'rotate(180deg)' : '', transition: 'transform .2s' }} /></button>
         <AnimatePresence>{more && <motion.div className="menu-pop" initial={{ opacity: 0, transform: 'translateY(-5px) scale(.95)' }} animate={{ opacity: 1, transform: 'translateY(0) scale(1)' }} exit={{ opacity: 0, transform: 'translateY(-5px) scale(.95)' }} transition={{ duration: .12 }}>
-          {extraLinks.map(({ label, href }) => <Link href={href} key={href} onClick={() => setMore(false)}>{label}</Link>)}
+          {adminLinks.map(({ label, href }) => <Link href={href} key={href} onClick={() => setMore(false)}>{label}</Link>)}
         </motion.div>}</AnimatePresence>
-      </div>
+      </div>}
       {themeButton}
     </div>
-    <div className="nav-mobile" style={{ position: 'relative' }}>
-      <div style={{ display: 'flex' }}>{themeButton}<button className="nav-icon" aria-label="Toggle menu" onClick={() => setMobile(!mobile)}>{mobile ? <FiX /> : <FiMenu />}</button></div>
+    <div className="nav-mobile" ref={mobileRef} style={{ position: 'relative' }}>
+      <div style={{ display: 'flex' }}>{themeButton}<button className="nav-icon" aria-label={mobile ? 'Fechar menu' : 'Abrir menu'} aria-expanded={mobile} onClick={() => setMobile(!mobile)}>{mobile ? <FiX /> : <FiMenu />}</button></div>
       <AnimatePresence>{mobile && <motion.div className="menu-pop" style={{ right: 0, minWidth: 170 }} initial={{ opacity: 0, transform: 'translateY(-5px) scale(.95)' }} animate={{ opacity: 1, transform: 'translateY(0) scale(1)' }} exit={{ opacity: 0, transform: 'translateY(-5px) scale(.95)' }} transition={{ duration: .12 }}>
-        {[...links, ...extraLinks].map(({ label, href }) => <Link href={href} key={href} onClick={() => setMobile(false)}>{label}</Link>)}
+        {links.map(({ label, href }) => <Link href={href} key={href} onClick={() => setMobile(false)}>{label}</Link>)}
+        {inAdmin && <><span className="menu-pop-divider" />{adminLinks.map(({ label, href }) => <Link href={href} key={href} onClick={() => setMobile(false)}>{label}</Link>)}</>}
       </motion.div>}</AnimatePresence>
     </div>
-  </nav>;
+  </nav></>;
 }

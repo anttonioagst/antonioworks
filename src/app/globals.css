@@ -353,3 +353,108 @@
 @media(max-width:640px){.admin-stats{grid-template-columns:repeat(2,minmax(0,1fr));padding:0 16px}.admin-ranking{padding:0 16px}.admin-note,.admin-empty{padding-inline:16px}.admin-chart-wrap,.admin-table-wrap{margin-inline:16px}.admin-private-links{gap:9px;font-size:11px}.admin-table{min-width:430px}.admin-stat{min-height:94px}.admin-stat strong{font-size:30px}}
 
 .menu-pop-divider{height:1px;margin:4px 2px;background:var(--border)}
+
+/* Open-to-work signal in the identity block. */
+.open-to-work{display:inline-flex;align-items:center;gap:7px;margin-top:8px;font-size:12px;color:var(--secondary);transition:color .2s}
+.open-to-work:hover,.open-to-work:focus-visible{color:var(--text)}
+html.dark .open-to-work:hover,html.dark .open-to-work:focus-visible{color:var(--text-day)}
+.open-dot{position:relative;width:7px;height:7px;border-radius:9999px;background:var(--live);flex-shrink:0}
+.open-dot:after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--live);animation:open-pulse 2s ease-out infinite}
+@keyframes open-pulse{from{transform:scale(1);opacity:.6}to{transform:scale(2.6);opacity:0}}
+@media(prefers-reduced-motion:reduce){.open-dot:after{animation:none}}
+@media(max-width:640px){.identity-main:has(.open-to-work){height:auto;min-height:152px}.open-to-work{font-size:10px;margin-top:5px;gap:6px;line-height:1.35;align-items:flex-start}.open-dot{width:6px;height:6px;margin-top:4px}}
+
+/* Case study: Painel de Qualidade. */
+.case-eyebrow{display:block;margin-bottom:10px;font:500 11px/1.4 var(--font-geist-mono),monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.case-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0;border-top:1px dashed var(--border)}
+.case-facts div{padding:16px 24px 18px;border-left:1px dashed var(--border)}
+.case-facts div:first-child{border-left:0}
+.case-facts dt{font-size:11px;letter-spacing:.04em;color:var(--muted)}
+.case-facts dd{margin:6px 0 0;font-size:13px;line-height:1.4;color:var(--secondary)}
+.case-body{padding:20px 24px 28px;font-size:15px;line-height:1.6;color:var(--secondary)}
+.case-body>p{margin:0 0 12px;max-width:640px}
+.case-body>p:last-child{margin-bottom:0}
+.case-modules{display:grid;grid-template-columns:1fr 1fr;gap:28px 20px}
+.case-module img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--border)}
+.case-module h3{margin:12px 0 4px;font-size:14px;font-weight:600;color:var(--text)}
+html.dark .case-module h3{color:var(--text-day)}
+.case-module p{margin:0;font-size:13px;line-height:1.5}
+.case-features{display:flex;flex-wrap:wrap;gap:8px 18px;margin:28px 0 0;padding:16px 0 0;list-style:none;border-top:1px dashed var(--border);font-size:13px}
+.case-features li{display:inline-flex;align-items:center;gap:7px}
+.case-features svg{color:var(--live);flex-shrink:0}
+.case-stack{margin-top:18px}
+.case-quote{margin:0;padding:2px 0 2px 18px;border-left:2px solid var(--border);font:400 26px/1.3 var(--font-instrument),Georgia,serif;color:var(--text);max-width:640px}
+html.dark .case-quote{color:var(--text-day)}
+.case-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:0 0 10px}
+.case-results dt{font:400 44px/1 var(--font-instrument),Georgia,serif;color:var(--text)}
+html.dark .case-results dt{color:var(--text-day)}
+.case-results dd{margin:8px 0 0;font-size:13px;line-height:1.45}
+.case-body>.case-note{margin-bottom:20px;font-size:12px;color:var(--muted)}
+.case-close{display:grid;place-items:center;gap:20px;padding:56px 20px;text-align:center;font-size:18px;color:var(--secondary)}
+.case-close p{margin:0}
+@media(max-width:640px){.case-facts{grid-template-columns:1fr 1fr}.case-facts div{padding:14px 16px}.case-facts div:nth-child(3){border-left:0}.case-facts div:nth-child(n+3){border-top:1px dashed var(--border)}.case-body{padding:16px 16px 22px;font-size:14px}.case-modules{grid-template-columns:1fr;gap:24px}.case-quote{font-size:21px}.case-results{grid-template-columns:1fr;gap:16px}.case-results dt{font-size:38px}.case-close{font-size:16px;padding:40px 16px}}
+.case-feature{display:grid;grid-template-columns:1.15fr 1fr;gap:22px;align-items:center;margin:0 16px 20px;padding:12px;border:1px dashed var(--border);border-radius:10px;background:var(--band);transition:border-color .2s}
+.case-feature:hover,.case-feature:focus-visible{border-color:var(--secondary)}
+.case-feature img{display:block;width:100%;height:auto;border-radius:7px;border:1px solid var(--border)}
+.case-feature-text{display:flex;flex-direction:column;gap:6px;padding-right:8px}
+.case-feature .case-eyebrow{margin-bottom:2px}
+.case-feature-title{font:400 30px/1.1 var(--font-instrument),Georgia,serif}
+.case-feature-summary{font-size:13px;line-height:1.5;color:var(--secondary)}
+.case-feature-cta{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-size:13px;font-weight:600}
+.case-feature-cta svg{transition:transform .2s}
+.case-feature:hover .case-feature-cta svg{transform:translateX(3px)}
+.all-projects .case-feature{margin:0 0 20px}
+.career-case-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600}
+.career-case-link svg{transition:transform .2s}
+.career-case-link:hover svg{transform:translateX(3px)}
+@media(max-width:640px){.case-feature{grid-template-columns:1fr;gap:14px}.case-feature-text{padding:0 4px 4px}.case-feature-title{font-size:26px}}
+@media(prefers-reduced-motion:reduce){.case-feature-cta svg,.career-case-link svg{transition:none}}
+
+/* Experience cards: mark, company and period share the first row; role sits right under the company. */
+.career-card-content{display:grid;grid-template-columns:48px minmax(0,1fr) auto;column-gap:14px;align-items:center;margin-inline:0;padding:22px 16px 24px}
+.career-more-block .career-card-content{padding-right:52px}
+.career-card-content .career-heading{display:contents}
+.career-card-content .company-mark{grid-column:1;grid-row:1/span 2;align-self:start}
+.career-card-content .career-heading .section-title{grid-column:2;grid-row:1;align-self:end;margin:0;line-height:1.1}
+.career-card-content .career-meta{grid-column:3;grid-row:1;align-self:center;margin:0}
+.career-card-content .career-role{grid-column:2/4;grid-row:2;align-self:start;margin:4px 0 0;padding:0}
+.career-card-content .career-description{grid-column:2/4;grid-row:3;margin:10px 0 0;padding:0}
+.career-more{top:17px;right:8px}
+.career-detail-clip{margin-inline:0;padding-inline:16px}
+@media(max-width:640px){
+  .career-card-content{grid-template-columns:40px minmax(0,1fr);column-gap:12px;padding:20px 16px 22px}
+  .career-more-block .career-card-content{padding-right:48px}
+  .career-card-content .company-mark{flex-basis:40px;width:40px;height:40px;border-radius:10px}
+  .career-card-content .career-role{grid-column:2;margin-top:3px}
+  .career-card-content .career-meta{grid-column:2;grid-row:3;justify-self:start;margin-top:8px}
+  .career-card-content .career-description{grid-column:2;grid-row:4;margin-top:8px}
+  .career-more{top:14px;right:4px}
+}
+.education-content{display:grid;grid-template-columns:48px minmax(0,1fr) auto;column-gap:14px;align-items:center;padding:22px 16px 24px}
+.education-content .career-heading{display:contents}
+.education-content .company-mark{grid-column:1;grid-row:1/span 2;align-self:start}
+.education-content .career-heading .section-title{grid-column:2;grid-row:1;align-self:end;line-height:1.1}
+.education-content .education-meta{grid-column:3;grid-row:1;align-self:center;justify-content:flex-end;margin:0}
+.education-content .education-course{grid-column:2/4;grid-row:2;align-self:start;margin-top:4px}
+.education-content .education-description{grid-column:2/4;grid-row:3;margin-top:10px}
+.education-content .certificate-grid{grid-column:2/4;grid-row:4}
+@media(max-width:640px){
+  .education-content{grid-template-columns:40px minmax(0,1fr);column-gap:12px;padding:20px 16px 22px}
+  .education-content .company-mark{flex-basis:40px;width:40px;height:40px;border-radius:10px}
+  .education-content .education-course{grid-column:2;margin-top:3px}
+  .education-content .education-meta{grid-column:2;grid-row:3;justify-content:flex-start;margin-top:8px}
+  .education-content .education-description{grid-column:2;grid-row:4;margin-top:8px}
+  .education-content .certificate-grid{grid-column:1/-1;grid-row:5}
+}
+.experience-body .career-card-content,.experience-body .education-content,.experience-body .career-detail-clip{padding-left:20px;padding-right:20px}
+.experience-body .career-more-block .career-card-content{padding-right:56px}
+@media(max-width:640px){.experience-body .career-card-content,.experience-body .education-content,.experience-body .career-detail-clip{padding-left:16px;padding-right:16px}.experience-body .career-more-block .career-card-content{padding-right:48px}}
+
+/* Full-bleed dashed rules use 100vw, which includes a classic scrollbar; clip instead of scrolling sideways. */
+html{overflow-x:hidden}
+body{overflow-x:clip}
+.contact-intro .copy-email{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:10px 0 0;font-size:13px;color:var(--muted)}
+.copy-email a{color:var(--secondary);text-decoration:underline;text-underline-offset:3px}
+.copy-email button{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border:1px dotted var(--border);border-radius:5px;background:var(--band);color:var(--secondary);font:inherit;font-size:12px;cursor:pointer;transition:color .2s,border-color .2s}
+.copy-email button:hover,.copy-email button:focus-visible{color:inherit;border-color:var(--secondary)}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}

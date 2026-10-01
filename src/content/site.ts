@@ -2,14 +2,15 @@ export const site = {
   name: 'Antonio Augusto Firmo Correa',
   wordmark: 'Antonio Augusto',
   domain: 'https://antonioworks.vercel.app',
-  resumeUrl: '/curriculo-antonio.png',
+  resumeUrl: '/curriculo-antonio.pdf',
   location: 'Caçador, SC',
   year: 2026,
   description: 'Assistente de Projetos e estudante de Análise e Desenvolvimento de Sistemas em transição para tecnologia.',
   banner: '/banner.gif',
   portraits: ['/antonio-profile-upscaled.png'],
   githubUser: 'anttonioagst',
-  roles: ['Assistente de Projetos', 'Cursando ADS', 'Estudando Tecnologia'],
+  roles: ['Assistente de Projetos', 'Graduando em ADS', 'Automação com IA'],
+  availability: 'Buscando primeira oportunidade em tecnologia',
   about: [
     'Atuei em projetos de <b>arquitetura e engenharia</b>, usando diariamente ferramentas como AutoCAD, Revit e 3ds Max.',
     'O contato direto com esses softwares despertou meu interesse por <b>desenvolvimento de aplicações</b> e me levou a estudar tecnologia.',
@@ -20,7 +21,7 @@ export const site = {
     { label: 'GitHub', href: 'https://github.com/anttonioagst', icon: 'github' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/anttonioagst/', icon: 'linkedin' },
     { label: 'Instagram', href: 'https://www.instagram.com/anttonioaugusto_/', icon: 'instagram' },
-    { label: 'Currículo', href: '/curriculo-antonio.png', icon: 'resume' },
+    { label: 'Currículo', href: '/curriculo-antonio.pdf', icon: 'resume' },
   ],
   projects: [
     { title: 'DevLinks', subtitle: 'Seus links em um só lugar.', description: 'Um cartão de visitas digital para reunir projetos, contatos e redes em uma interface simples e direta.', detail: 'Um agregador de links pessoais que reúne projetos, redes sociais e formas de contato em uma página simples, usada como cartão de visitas digital.', stack: ['HTML', 'CSS', 'JavaScript', 'Figma'], ai: 'Claude Code e Cursor', tags: ['HTML', 'CSS', 'JavaScript'], image: '/projects/dev-links.jpg', url: 'https://anttonioagst.github.io/dev-links/', repo: 'https://github.com/anttonioagst/dev-links' },
@@ -46,6 +47,7 @@ export const site = {
       period: '2026–atual',
       description: 'Relatórios topográficos e apoio à Qualidade com AutoCAD e Excel.',
       logo: '/companies/estel-premium.png',
+      caseHref: '/projects/painel-de-qualidade',
       tools: [
         { name: 'Claude', color: '#d97757' },
       ],
@@ -66,6 +68,42 @@ export const site = {
     { company: 'Blackbox', role: 'Modelagem 3D para arquitetura', period: '2021', description: 'Produção de modelos com 3ds Max e AutoCAD.', logo: '/companies/blackbox.svg' },
     { company: 'Construtora Pasqualotto', role: 'Jovem Aprendiz — Engenharia', period: '2020', description: 'Início profissional na área de engenharia.', logo: '/companies/pasqualotto-premium.png' },
   ],
+  qualityPanel: {
+    href: '/projects/painel-de-qualidade',
+    title: 'Painel de Qualidade',
+    eyebrow: 'Case · Grupo Estel · 2026',
+    summary: 'Um aplicativo interno que reúne os controles da Qualidade em um só lugar, para a obra e o escritório consultarem a mesma informação.',
+    facts: [
+      { label: 'Em uso', value: 'Desde julho de 2026' },
+      { label: 'Quem usa', value: 'Obra Adami, Planejamento e Qualidade' },
+      { label: 'Base', value: 'Google Apps Script e Google Drive' },
+      { label: 'Construção', value: 'Ideia minha, código feito com IA' },
+    ],
+    problem: [
+      'Os controles da Qualidade viviam em planilhas e no LMS. A mesma informação aparecia em lugares diferentes, com versões que não batiam.',
+      'Na prática, isso virava pergunta o dia inteiro: em que pé está tal consulta técnica, quem respondeu, o que falta. O controle das consultas técnicas (CTs) era o ponto mais sensível.',
+    ],
+    modules: [
+      { title: 'Consultas Técnicas', text: 'Acompanhamento das CTs com situação, ciclo e responsável. Mostra o que está em aberto há mais tempo e o que parou sem movimento.', shot: '/experience/estel/consultas-tecnicas.png' },
+      { title: 'Relatórios de Topografia', text: 'Os relatórios topográficos da obra, com os mesmos filtros e indicadores das CTs.', shot: '/experience/estel/relatorios-topografia.png' },
+      { title: 'Equipamentos', text: 'Avanço dos equipamentos por TAG, do registro à assinatura.', shot: '/experience/estel/equipamentos.png' },
+      { title: 'Checklist de Montagem', text: 'Fila de checklists por área, tipo e disciplina, com o que falta, o que está pronto e o que acabou de entrar.', shot: '/experience/estel/checklist-montagem.png' },
+    ],
+    features: ['Busca em todos os módulos', 'Filtros por situação, ciclo, mês e responsável', 'Atualização pela planilha do Drive ou pelo Excel do OneDrive', 'Relatório em PDF e resumo para copiar', 'Funciona no celular, em campo'],
+    build: [
+      'O código foi escrito inteiramente com IA. A minha parte foi decidir o que o painel precisava resolver: quais controles entrariam, como cada um funcionaria, o que mostrar primeiro e o que deixar de fora.',
+      'O painel roda em Google Apps Script, com HTML, CSS e JavaScript, e usa o Google Drive como banco. As planilhas continuam sendo a fonte, e o Drive guarda o histórico de versões.',
+    ],
+    stack: ['Google Apps Script', 'Google Drive', 'HTML', 'CSS', 'JavaScript', 'Claude'],
+    challenge: 'O mais difícil não foi técnico. Foi entender exatamente o que cada pessoa queria ver. São muitas informações, e um painel mal desenhado atrapalha mais do que ajuda.',
+    results: [
+      { value: '95', label: 'consultas técnicas acompanhadas, 71 já encerradas' },
+      { value: '5.895', label: 'itens no checklist de montagem' },
+      { value: 'Diário', label: 'uso no controle e nas reuniões, desde julho' },
+    ],
+    resultsNote: 'Números do painel em setembro de 2026.',
+    outcome: 'Além do controle do dia a dia, o painel virou a forma de apresentar a Qualidade nas reuniões e de responder rápido quando alguém precisa de uma informação. Os gerentes viram o uso e me incentivaram a inscrevê-lo no BIS, o programa de inovação da Estel. A apresentação acontece em outubro de 2026.',
+  },
   education: [
     { institution: 'Uninter', course: 'Tecnólogo em Análise e Desenvolvimento de Sistemas', period: '2026–atual', status: 'Em andamento', description: 'Graduação em Análise e Desenvolvimento de Sistemas, atualmente em curso.', logo: '/education/uninter-upscaled.png', certificates: [] },
     { institution: 'Human Academy', course: 'Workshops de inteligência artificial e agentes', period: '2026', status: 'Concluído', description: 'Dois workshops sobre agentes de inteligência artificial, com 30 horas de formação concluídas.', logo: '/education/human-mark.svg', certificates: [
