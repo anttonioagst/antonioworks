@@ -17,6 +17,13 @@ export function trafficSource(): string {
   }
 }
 
+export function deviceType(): 'mobile' | 'tablet' | 'desktop' {
+  const coarse = matchMedia('(pointer: coarse)').matches;
+  if (coarse && innerWidth < 768) return 'mobile';
+  if (coarse) return 'tablet';
+  return 'desktop';
+}
+
 export function Analytics() {
   const path = usePathname();
 
@@ -25,7 +32,7 @@ export function Analytics() {
     fetch('/api/views', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ path, source: trafficSource() }),
+      body: JSON.stringify({ path, source: trafficSource(), device: deviceType() }),
       cache: 'no-store',
       keepalive: true,
     }).catch(() => undefined);

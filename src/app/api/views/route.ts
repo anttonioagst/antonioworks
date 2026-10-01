@@ -1,6 +1,6 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { NextRequest, NextResponse } from 'next/server';
-import { analyticsDay, analyticsDailyKey, analyticsPagesKey, analyticsSourcesKey, analyticsTotalKey, isTrackedPath, visitorSetKey } from '@/lib/analytics-store';
+import { analyticsCountriesKey, analyticsDay, analyticsDailyKey, analyticsDevicesKey, analyticsPagesKey, analyticsSourcesKey, analyticsTotalKey, isTrackedPath, visitorSetKey } from '@/lib/analytics-store';
 import { redisCommand } from '@/lib/redis';
 
 export const runtime = 'nodejs';
@@ -31,11 +31,16 @@ export async function POST(request: NextRequest) {
   if (origin && origin !== request.nextUrl.origin) return json(null, 403);
   let path = '/';
   let source = 'Direto';
+  let device: string | null = null;
   try {
     const payload = await request.json();
     if (typeof payload.path === 'string' && isTrackedPath(payload.path)) path = payload.path;
     if (typeof payload.source === 'string' && /^[a-zA-Z0-9._:-]{1,64}$/.test(payload.source)) source = payload.source.toLowerCase();
+    if (payload.device === 'mobile' || payload.device === 'tablet' || payload.device === 'desktop') device = payload.device;
   } catch { /* Existing clients can still count a visit without a body. */ }
+  // Vercel resolves the country at the edge; only the two-letter code is kept, never the IP.
+  const countryHeader = request.headers.get('x-vercel-ip-country');
+  const country = countryHeader && /^[A-Z]{2}$/.test(countryHeader) ? countryHeader : null;
 
   const existing = request.cookies.get(cookieName)?.value;
   const visitorId = existing && /^[0-9a-f-]{36}$/i.test(existing) ? existing : randomUUID();
@@ -58,6 +63,8 @@ export async function POST(request: NextRequest) {
         redisCommand('HINCRBY', analyticsTotalKey, 'visits', '1'),
         redisCommand('HINCRBY', analyticsDailyKey, `${day}:visits`, '1'),
         redisCommand('HINCRBY', analyticsSourcesKey, source, '1'),
+        ...(device ? [redisCommand('HINCRBY', analyticsDevicesKey, device, '1')] : []),
+        ...(country ? [redisCommand('HINCRBY', analyticsCountriesKey, country, '1')] : []),
       ] : []),
     ]);
     response = json(Number(await redisCommand('SCARD', visitorSetKey)));
