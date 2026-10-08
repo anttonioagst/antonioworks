@@ -42,3 +42,7 @@ next-env.d.ts
 
 # Local view count
 /.data/
+
+# Agent-local config and skill copies (skills live in ~/Documents/AI/Skills)
+/.agents/
+/.claude/
