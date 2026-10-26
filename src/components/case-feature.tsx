@@ -11,6 +11,14 @@ export function CaseFeature() {
       <span className="case-eyebrow">{panel.eyebrow}</span>
       <span className="case-feature-title">{panel.title}</span>
       <span className="case-feature-summary">{panel.summary}</span>
+      <ul className="case-feature-results">
+        {panel.results.map((result) => (
+          <li key={result.label}>
+            <strong>{result.value}</strong>
+            <span>{result.label}</span>
+          </li>
+        ))}
+      </ul>
       <span className="case-feature-cta">Ler o case <FiArrowRight aria-hidden="true"/></span>
     </span>
   </Link>;

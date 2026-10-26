@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { FiArrowRight, FiEye, FiGithub, FiGlobe, FiLayers, FiLinkedin, FiMail, FiPaperclip, FiShoppingBag, FiX } from 'react-icons/fi';
 import { FaInstagram } from 'react-icons/fa6';
-import { SiClaudecode, SiClaude, SiCss, SiCursor, SiFigma, SiGit, SiGithub, SiGreensock, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
+import { SiClaudecode, SiClaude, SiCss, SiCursor, SiFigma, SiGit, SiGithub, SiGoogleappsscript, SiGreensock, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
 import { MdVerified } from 'react-icons/md';
 import { VscOpenai, VscVscode } from 'react-icons/vsc';
 import { AnimatePresence, motion } from 'motion/react';
@@ -18,10 +18,10 @@ import { Period } from './period';
 import { SceneBanner } from './scene-banner';
 
 const stackIcons: Record<string, React.ComponentType> = {
-  HTML: SiHtml5, CSS: SiCss, JavaScript: SiJavascript,
-  Git: SiGit, GitHub: SiGithub, 'VS Code': VscVscode, Cursor: SiCursor, Codex: VscOpenai, Claude: SiClaude,
+  HTML: SiHtml5, CSS: SiCss, JavaScript: SiJavascript, TypeScript: SiTypescript, React: SiReact, 'Next.js': SiNextdotjs, 'Tailwind CSS': SiTailwindcss,
+  Git: SiGit, GitHub: SiGithub, 'Google Apps Script': SiGoogleappsscript, 'VS Code': VscVscode, Cursor: SiCursor, Codex: VscOpenai, Claude: SiClaude,
 };
-const stackColors: Record<string,string> = {HTML:'#e34f26',CSS:'#1572b6',JavaScript:'#f7df1e',Git:'#f05032',GitHub:'#ddd','VS Code':'#24a9f2',Cursor:'#cccccc',Codex:'#a9a9a9',Claude:'#d97757'};
+const stackColors: Record<string,string> = {HTML:'#e34f26',CSS:'#1572b6',JavaScript:'#f7df1e',TypeScript:'#3178c6',React:'#61dafb','Next.js':'#ddd','Tailwind CSS':'#38bdf8',Git:'#f05032',GitHub:'#ddd','Google Apps Script':'#188038','VS Code':'#24a9f2',Cursor:'#cccccc',Codex:'#a9a9a9',Claude:'#d97757'};
 const projectIcons: Record<string, React.ComponentType> = {
   HTML: SiHtml5, CSS: SiCss, JavaScript: SiJavascript, Figma: SiFigma,
   'Next.js': SiNextdotjs, React: SiReact, TypeScript: SiTypescript,
@@ -107,7 +107,7 @@ export function ProjectGrid(){
   </article>)}</div>{selected && <ProjectDialog project={selected} onClose={close}/>}</>;
 }
 export function Projects(){return <section className="section"><div className="section-head"><h2 className="section-title">Projetos</h2><Link className="muted section-action" href="/projects">Ver todos <FiArrowRight className="arrow redirect-arrow" aria-hidden="true"/></Link></div><CaseFeature/><ProjectGrid/></section>}
-export function TechStack(){const [filter,setFilter]=useState('Todos');return <section className="section"><div className="section-head"><div className="stack-head"><h2 className="section-title">Tecnologias</h2><span className="stack-hint"><span className="hint-hover">( passe o cursor para ouvir )</span><span className="hint-click">( toque para ouvir )</span></span></div><div className="filters">{['Todos','Frontend','Ferramentas'].map(f=><button key={f} className={filter===f?'selected':''} onClick={()=>{setFilter(f);playNote()}}>{f}</button>)}</div></div><div className="tech-list">{site.stack.filter(s=>filter==='Todos'||s[1].includes(filter==='Ferramentas'?'tools':filter.toLowerCase())).map(([name,,href,hz])=>{const Icon=stackIcons[name];return <a key={name} href={href} target="_blank" rel="noreferrer" className="tech-chip" style={{'--brand':stackColors[name]||'currentColor'} as React.CSSProperties} onMouseEnter={()=>{if(matchMedia('(hover: hover)').matches)playNote(hz,.08)}} onClick={e=>{if(matchMedia('(hover: none)').matches){e.preventDefault();playNote(hz,.08)}}}><Icon/>{name}</a>})}</div></section>}
+export function TechStack(){const [filter,setFilter]=useState('Todos');return <section className="section"><div className="section-head"><div className="stack-head"><h2 className="section-title">Tecnologias</h2><span className="stack-hint"><span className="hint-hover">( passe o cursor para ouvir )</span><span className="hint-click">( toque para ouvir )</span></span></div><div className="filters">{['Todos','Frontend','Ferramentas'].map(f=><button key={f} className={filter===f?'selected':''} onClick={()=>{setFilter(f);playNote()}}>{f}</button>)}</div></div><p className="stack-level">Web em estudo. Apps Script no painel da Estel.</p><div className="tech-list">{site.stack.filter(s=>filter==='Todos'||s[1].includes(filter==='Ferramentas'?'tools':filter.toLowerCase())).map(([name,,href,hz])=>{const Icon=stackIcons[name];return <a key={name} href={href} target="_blank" rel="noreferrer" className="tech-chip" style={{'--brand':stackColors[name]||'currentColor'} as React.CSSProperties} onMouseEnter={()=>{if(matchMedia('(hover: hover)').matches)playNote(hz,.08)}} onClick={e=>{if(matchMedia('(hover: none)').matches){e.preventDefault();playNote(hz,.08)}}}><Icon/>{name}</a>})}</div></section>}
 type Activity = { total: number; days: { date: string; level: number; count: number }[]; stale?: boolean; updatedAt?: string };
 export function GithubActivity(){
   const [activity,setActivity]=useState<Activity|null>(null);
