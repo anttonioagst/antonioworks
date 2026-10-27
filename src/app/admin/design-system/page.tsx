@@ -36,7 +36,7 @@ const tokens = [
 const components = [
   ['Frame + Nav', 'src/components/frame.tsx · nav.tsx', 'Moldura de 800 px, navegação fixa com faixa opaca em toda a janela e rodapé. Todas as rotas públicas.'],
   ['Identity + SceneBanner', 'src/components/home.tsx · scene-banner.tsx', 'Abertura, foto, cargo e contador. Só na home.'],
-  ['About + ContactRow', 'src/components/home.tsx', 'Cinco células de 60 px: moldura 40 px, ícone 20 px, rótulo 16 px e seta 16 px junto ao texto. Só na home.'],
+  ['About + ContactRow', 'src/components/home.tsx', 'Na home, ContactRow fica acima de Sobre. Cinco células de 60 px: moldura 40 px, ícone 20 px, rótulo 16 px e seta 16 px junto ao texto.'],
   ['ProjectGrid + ProjectDialog', 'src/components/home.tsx', 'Card abre detalhes; links do site e código permanecem independentes. Home e /projects compartilham os dados.'],
   ['TechStack', 'src/components/home.tsx', 'Filtros e ícones com som em gesto. Só na home.'],
   ['GithubActivity', 'src/components/home.tsx', 'Meses em uma linha de 21 px; grade de células de 11 px com 3 px de intervalo; total e legenda em 13 px. Dados reais do GitHub. Só na home.'],
